@@ -6,7 +6,7 @@ all:true-all
 
 BIN?=bin
 TARGETS=
-
+INCLUDES=-I./include
 
 include base.mk
 
