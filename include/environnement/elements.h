@@ -1,0 +1,19 @@
+#ifndef __ELEMENT_RESOURCE_H__
+#define __ELEMENT_RESOURCE_H__
+
+enum ELEMENT_TYPE_FLAG {
+  RED_ELAN_ESSENCE_FLAG      =  1 << 0,
+  GREEN_LIFE_ESSENCE_FLAG    =  1 << 1,
+  BLUE_CALM_ESSENCE_FLAG     =  1 << 2,
+  BLACK_DEATH_ESSENCE_FLAG   =  1 << 3,
+  YELLOW_GOLD_ESSENCE_FLAG   =  1 << 4,
+  EVERYTHING_ESSENCE_FLAG    =  1 << 5,
+  SPECIAL_CREATURE_TYPE_FLAG =  1 << 6,
+  SPECIAL_DRAGON_TYPE_FLAG   =  1 << 7
+};
+
+class Essence {
+
+};
+
+#endif //__ELEMENT_RESOURCE_H__
