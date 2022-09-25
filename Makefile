@@ -1,6 +1,7 @@
 
 
 .PHONY:all,true-all
+
 all:true-all
 
 BIN?=bin

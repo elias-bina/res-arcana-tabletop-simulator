@@ -1,15 +1,15 @@
 
 
 
-%.o:%.cpp
+$(BIN)/%.o:%.cpp
+	mkdir -p $(dir $@)
 	gcc -o $@ -c $^ 
 
-%-make-exe:
-	mkdir -p ${BIN}
-	g++ -o ${BIN}/$(patsubst %-make-exe,%,$@)  $^ 
+$(BIN)/%-make-exe:
+	mkdir -p $(dir $@)
+	g++ -o $(patsubst %-make-exe,%,$@)  $^ 
 
 
 .PHONY:clean
 clean:
-	rm -f src/*.o
-	rm -rf ${BIN}
+	rm -rf $(BIN)

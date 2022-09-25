@@ -1,13 +1,16 @@
+include src/environnement/project.mk
 
-TARGETS+=res-arcana-sim-make-exe
-
-
-
-SIMULATOR-SRCS=src/hello.cpp
+TARGETS+=$(BIN)/res-arcana-sim-make-exe
 
 
 
-SIMULATOR-OBJS:=$(SIMULATOR-SRCS:.cpp=.o)
+SIMULATOR-SRCS= \
+	src/hello.cpp \
+	${ENVIRONNEMENT-SRCS}
 
 
-res-arcana-sim-make-exe:$(SIMULATOR-OBJS)
+
+SIMULATOR-OBJS:=$(SIMULATOR-SRCS:%.cpp=$(BIN)/%.o)
+
+
+$(BIN)/res-arcana-sim-make-exe:$(SIMULATOR-OBJS)
