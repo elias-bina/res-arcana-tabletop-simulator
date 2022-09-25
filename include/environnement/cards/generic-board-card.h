@@ -5,11 +5,11 @@
 #include <string>
 #include <vector>
 
+#include "environnement/elements.h"
+
 #include "effects/collect-effect.h"
 #include "effects/effect.h"
 #include "effects/react-effect.h"
-
-#include "elements.h"
 
 class GenericBoardCard {
 public:
