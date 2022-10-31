@@ -15,7 +15,7 @@ class GenericBoardCard {
 public:
   std::string _card_name;
 
-  std::list<CollectCardEffect> _collect_effects;
+  std::list<GenericCardEffect> _collect_effects;
   std::list<ReactCardEffect> _react_effects;
   std::list<GenericCardEffect> _effects;
   bool _is_discharged;
